@@ -1,0 +1,13 @@
+.manage-users {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.role-select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
