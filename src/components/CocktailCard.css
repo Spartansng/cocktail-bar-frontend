@@ -1,0 +1,62 @@
+.cocktail-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.cocktail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.cocktail-card-image {
+  height: 180px;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cocktail-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cocktail-card-placeholder {
+  font-size: 4rem;
+  opacity: 0.4;
+}
+
+.cocktail-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cocktail-card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cocktail-card-category {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cocktail-card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
