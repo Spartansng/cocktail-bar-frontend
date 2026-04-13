@@ -1,0 +1,104 @@
+.cocktail-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cocktail-detail-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.cocktail-detail-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cocktail-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cocktail-detail-placeholder {
+  font-size: 6rem;
+  opacity: 0.3;
+}
+
+.cocktail-detail-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-category {
+  display: inline-block;
+  background-color: var(--bg-input);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+.cocktail-detail-info {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-section {
+  margin-bottom: 1rem;
+}
+
+.ingredient-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.ingredient-list li {
+  margin-bottom: 0.3rem;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+@media (max-width: 600px) {
+  .cocktail-detail-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cocktail-detail-image {
+    width: 100%;
+    height: 250px;
+  }
+}
